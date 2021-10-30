@@ -1,10 +1,10 @@
-# Magnus Carlsen Games Visualizer 
+# Magnus Carlsen Games Analysis
 
 ## Overview
 
 This is a preliminary analysis of set of games by world chess champion Magnus Carlsen pulled from the Lichess.org server. 
 
-The first part of the analysis is carried out only a subset of games (a random sample of 500 games pulled from [this][arxiv] Kaggle archive of all his Lichess games). This small subset is meant for demonstration purposes as the source data is too large to include directly on Github. If you would like to generate a report for the full data, you will need to create an account on Kaggle and download the data, then place the file `carlsen_games_moves.csv` in the `source_data` folder. 
+The first part of the analysis is carried out only a subset of games (a random sample of 500 games pulled from [this][arxiv] Kaggle archive of all his Lichess games). This small subset is meant for demonstration purposes as the source data is too large to include directly on Github. If you would like to generate a report for the full data, you will need to create an account on Kaggle and download the data, then place the file `carlsen_games_moves.csv` in the `/source_data` folder. 
 
 ## Docker
 
@@ -30,7 +30,8 @@ Alternatively, if you would like to run the container yourself and choose your o
 docker run\
  -e PASSWORD="pwd"\
  -v $(pwd):/home/rstudio/project\
- --rm -w "/home/rstudio/project" -it bios611project sudo -H -u rstudio /bin/bash 
+ --rm -w "/home/rstudio/project"\
+ -it bios611project sudo -H -u rstudio /bin/bash 
 ``` 
 
 Once the container is running, you can create the report using make:
