@@ -28,7 +28,7 @@ Alternatively, if you would like to run the container yourself and choose your o
 
 ``` console
 docker run\
- -e PASSWORD="pwd"\
+ -e PASSWORD=<Your Password>\
  -v $(pwd):/home/rstudio/project\
  --rm -w "/home/rstudio/project"\
  -it bios611project sudo -H -u rstudio /bin/bash 
