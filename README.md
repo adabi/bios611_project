@@ -4,7 +4,7 @@
 
 This is an analysis of set of games by world chess champion Magnus Carlsen pulled from the Lichess.org server. 
 
-Except for the Elo regression, the analysis is carried out only on a subset of games (a random sample of 500 games pulled from [this][arxiv] Kaggle archive of all his Lichess games). This small subset is meant for demonstration purposes as the source data is too large to include directly on Github. If you would like to generate a report for the full data, you will need to create an account on Kaggle and download the data, then place the files `carlsen_games_moves.csv`, `carlsen_games.csv`, and `eco_codescsv` in the `/source_data` folder. 
+Except for the Elo regression, the analysis is carried out only on a subset of games (a random sample of 500 games pulled from [this][arxiv] Kaggle archive of all his Lichess games). This small subset is meant for demonstration purposes as the source data is too large to include directly on Github. If you would like to generate a report for the full data, you will need to create an account on Kaggle and download the data, then place the files `carlsen_games_moves.csv`, `carlsen_games.csv`, and `eco_codes.csv` in the `/source_data` folder. 
 
 ## Docker
 
